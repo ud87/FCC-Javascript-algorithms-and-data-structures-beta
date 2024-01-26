@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: rgb(5, 5, 54);
+    color: white;
+}
+
+#container {
+    display: block;
+    margin: 8rem auto;
+    max-width: 50%; 
+}
+
+
+h1 {
+    font-size: 2rem; 
+    text-align: center;
+    padding: 2rem;
+}
+
+
+label {
+    display: block;         /*to display label in a different line*/
+    margin-bottom: 1.5rem;
+}
+
+#user-input, #info {
+    padding: 1.5rem;
+    text-align: center;
+    width: 60%;
+    margin: 1rem auto 1rem auto;
+    border-radius: 0.75rem;
+}
+
+div#user-input {
+    
+    background-color: white;
+    color: black;
+    
+}
+
+#info {
+    background-color: rgb(2, 85, 2);
+}
+
+#text-input {
+    height: 1.5rem;
+    border: none;
+    border-bottom: 2px solid purple;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#text-input.focus {
+    border: 1px solid black;
+}
+
+#check-btn {
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+    background-color: blueviolet;
+    color: white;                       /*change button text color to white*/
+    border-style: none;                 /*removes border outline*/
+}
+
+div#result {
+    margin: 1rem auto;
+}
+
+#info p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#info span {
+    display: block;
+}
+
+@media screen and (max-width: 930px) and (orientation: landscape){
+    #container {
+        margin: 1rem auto;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    #container {
+        min-width: 80%; 
+    }
+}
+
+@media screen and (max-width: 450px){
+    #container {
+        margin: 5rem auto;
+    }
+
+    div#user-input {
+        padding: 0.5rem;
+    }
+
+
+    #text-input {
+        width: 90%;
+        height: 2rem;
+    }
+     
+}
