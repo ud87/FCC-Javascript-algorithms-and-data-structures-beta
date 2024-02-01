@@ -1,0 +1,64 @@
+/*reset any default padding and margin that browsers may apply to certain elements*/
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #c5c392;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;        /*centers flexbox on vertical axis*/
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+#user-input, #output { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10%;
+    border: 2px solid gold;
+    border-radius: 0.5rem;
+    background-color: #b0a990;
+}
+
+#output {
+    visibility: hidden;
+}
+
+label {
+    font-weight: bold;
+}
+
+#number, #convert-btn {
+    padding: 0.25rem;
+}
+
+#number {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#convert-btn {
+    display: block;
+    margin: 0.5rem auto 0 auto;      /*top margin 1rem and center button*/
+    background: linear-gradient(#fecc4c, #ffac33);
+    border: 1px solid #ffac33;
+    border-radius: 0.125rem;
+}
+
+
