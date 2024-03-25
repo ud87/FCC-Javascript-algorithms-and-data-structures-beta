@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokémon Search App</h1>
+        </header>
+        <main>
+            <label for="search-input">Search for Pokémon Name or ID:</label>
+            <input type="text" id="search-input" required pattern="[a-zA-Z0-9]+">
+            <button id="search-button">Search</button>
+            <div class="pokemon-intro">
+                <h2><span id="pokemon-name"></span> <span id="pokemon-id"></span></h2>
+                <p><span id="weight"></span> <span id="height"></span></p>
+                <img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+                    alt="">
+                <p><span id="types"></span></p>
+            </div>
+            <div class="stats-data">
+                <!--
+                <div id="base" class="col left-col"><strong>Base</strong></div>
+                <div id="base-stats" class="col right-col"><strong>Stats</strong></div>
+                <div id="hp" class="col left-col">HP:</div>
+                <div id="hp-value" class="col right-col"></div>
+                <div id="attack" class="col left-col">Attack:</div>
+                <div id="attack-value" class="col right-col"></div>
+                <div id="defense" class="col left-col">Defense:</div>
+                <div id="defense-value" class="col right-col"></div>
+                <div id="special-attack" class="col left-col">Sp. Attack:</div>
+                <div id="special-attack-value" class="col right-col"></div>
+                <div id="special-defense" class="col left-col">Sp. Defense:</div>
+                <div id="special-defense-value" class="col right-col"></div>
+                <div id="speed" class="col left-col">Speed:</div>
+                <div id="speed-value" class="col right-col"></div> 
+                -->
+                <div id="base" class="col left-col"><strong>Base</strong></div>
+                <div id="base-stats" class="col right-col"><strong>Stats</strong></div>
+                <div class="col left-col">HP:</div>
+                <div id="hp" class="col right-col"></div>
+                <div class="col left-col">Attack:</div>
+                <div id="attack" class="col right-col"></div>
+                <div class="col left-col">Defense:</div>
+                <div id="defense" class="col right-col"></div>
+                <div class="col left-col">Sp. Attack:</div>
+                <div id="special-attack" class="col right-col"></div>
+                <div class="col left-col">Sp. Defense:</div>
+                <div id="special-defense" class="col right-col"></div>
+                <div class="col left-col">Speed:</div>
+                <div id="speed" class="col right-col"></div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

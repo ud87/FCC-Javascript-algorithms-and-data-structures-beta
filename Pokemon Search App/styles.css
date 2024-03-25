@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+
+:root {
+    --main-bg-color: #ffe26c;
+    --white: #FFFFFF;
+    --dark-navy: #1a1a8b;
+    --purple: #800080;
+    --light-blue: #add8e6;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    /*border: 1px solid blue;*/
+    text-align: center;
+}
+
+header {
+    color: var(--white);
+    text-shadow: var(--dark-navy) 10px 0 10px;
+    margin: 1rem 0 1rem 0;
+}
+
+main {
+    display: inline-block;      /*to avoid margin collapsing*/
+    width: 60%;
+    background-color: var(--white);
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 555px){
+    .container {
+        width: 90%;
+    }
+    main {
+        width: 80%;
+    }
+}
+
+main label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#search-input, #search-button {
+    height: 2rem;
+    margin: 0.125rem;
+    padding: 0 0.5rem;
+}
+
+#search-button {
+    height: 2rem;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 0.75rem;
+}
+
+.pokemon-intro{
+    margin: 1.5rem 0 1rem 0;
+    background: var(--light-blue);
+    padding: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    visibility: hidden;
+}
+
+.pokemon-intro h2 {
+    text-align: left;
+    font-weight: normal;
+}
+
+img {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+/*types-1 and types-2 are inserted by js script*/
+#types-1 {
+    background: grey;
+}
+
+#types-2 {
+    background: lightgrey;
+}
+
+#types-1, #types-2 {
+    border-radius: 0.25rem;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.stats-data {
+   display: flex; 
+   flex-wrap: wrap;
+   width: 100%;
+   gap: 4px;
+}
+
+.stats-data .col {
+    height: 2rem; 
+    line-height: 2rem;      /*line height must be same as height to vertically align text inside div*/
+    background: var(--purple);
+    color: var(--white);
+}
+
+.stats-data .left-col {
+    width: 70%;
+}
+
+.stats-data .right-col {
+    width: 28%;
+}
+
+@media screen and (max-width: 325px){
+    #search-input {
+        width: 70%;
+    }
+    .stats-data {
+        justify-content: center;    /*so both base and stats are centered for screens less than 325px*/
+    }
+
+    .stats-data .left-col {
+        width: 60%;
+    }
+    
+    .stats-data .right-col {
+        width: 30%;
+    }
+    
+}
+
+
+/*to change span elements to display: block so there is a gap when it is displayed vertically on small screens*/
+@media screen and (max-width: 315px){
+    #types-1, #types-2 {
+        display: block;
+        width: 60%;
+    }
+}
